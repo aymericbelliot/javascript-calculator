@@ -1,0 +1,142 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calcPad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+      grid-template-areas: "display display display display" "clear clear clear divide" "seven height nine multiply" "four five six substract" "one two three add" "zero zero decimal equals";
+}
+
+#display {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: display;
+}
+
+#clear {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: clear;
+}
+
+#zero {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+#one {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#two {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#three {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#four {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#five {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#six {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+#seven {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+#height {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: height;
+}
+
+#nine {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+#ten {
+  grid-area: ten;
+}
+
+#decimal {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: decimal;
+}
+
+#add {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: add;
+}
+
+#substract {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: substract;
+}
+
+#multiply {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+#divide {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: divide;
+}
+
+#equals {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+/*# sourceMappingURL=App.css.map */

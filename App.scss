@@ -1,0 +1,97 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calcPad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "display display display display"
+    "clear clear clear divide"
+    "seven height nine multiply"
+    "four five six substract"
+    "one two three add"
+    "zero zero decimal equals"
+}
+
+#display {
+  grid-area: display;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#height {
+  grid-area: height;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#ten {
+  grid-area: ten;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#add {
+  grid-area: add;
+}
+
+#substract {
+  grid-area: substract;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#equals {
+  grid-area: equals;
+}
